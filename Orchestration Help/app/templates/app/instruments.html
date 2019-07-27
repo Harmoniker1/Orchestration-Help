@@ -1,0 +1,55 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2><b>{{ title }}</b></h2>
+<p style = "margin-top:0.4cm">{{ message }}</p>
+
+<h4 style = "margin-top:0.7cm"><b>Introduction:</b></h4>
+<p style = "margin-top:0.4cm">
+    There're usually four kinds of instruments in a standard symphony orchestra: woodwind, brass, percussion, and string.
+</p>
+<p style = "margin-top:0.1cm">
+    Woodwind instruments are most often used to convey emotional subjects, or offer a continuous chord background, due to their rather soft timbre.
+    <br>
+    Brass instruments, on the other hand, are used to demonstrate military or epic statements, as well as enhancing the stability of tutti of the whole orchestra.
+    <br>
+    The usage of percussion instrument differs greatly from one to another, but the most common effect is changing the sound quality of the orchestra, i.e. making it massive/passionate/mysterious.
+    <br>
+    String instruments have the most plasticity among all instruments in the orchestra, making them almost possible to present every kind of emotion or trick you want them to.
+</p>
+
+<div class = "row">
+    <div class = "col-md-3">
+        <h2>Woodwind</h2>
+        <p><a class = "btn btn-info" href = "flute/">Flute &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "oboe/">Oboe &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "clarinet/">Clarinet &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "bassoon/">Bassoon &raquo;</a></p>
+        <p><a class = " btn btn-info" href = "saxophone/">Saxophone &raquo;</a></p>
+    </div>
+    <div class = "col-md-3">
+        <h2>Brass</h2>
+        <p><a class = "btn btn-info" href = "horn/">Horn &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "trumpet/">Trumpet &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "trombone/">Trombone &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "tuba/">Tuba &raquo;</a></p>
+    </div>
+    <div class = "col-md-3">
+        <h2>Percussion</h2>
+        <p><a class = "btn btn-info" href = "timpani/">Timpani &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "bass_drum/">Bass Drum &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "snare_drum/">Snare Drum &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "cymbal/">Cymbal &raquo;</a></p>
+    </div>
+    <div class = "col-md-3">
+        <h2>Strings</h2>
+        <p><a class = "btn btn-info" href = "harp/">Harp &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "violin/">Violin &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "viola/">Viola &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "violoncello/">Violoncello &raquo;</a></p>
+        <p><a class = "btn btn-info" href = "contrabass/">Contrabass &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}

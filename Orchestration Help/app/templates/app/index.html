@@ -1,0 +1,29 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class = "jumbotron" style = "margin-top:1.2cm">
+    <h2><b>Orchestration Help</b></h2>
+    <p class = "lead">A place to look for useful information on orchestration</p>
+    <p><a href = "about/" class = "btn btn-primary btn-large">Learn more about the developer &raquo;</a></p>
+</div>
+
+<div class = "row">
+    <div class = "col-md-4">
+        <h2><b>Get started!</b></h2>
+        <p>Hasn't even the basic idea of orchestration? Start by knowing about instruments in the orchestra!</p>
+        <p><a class = "btn btn-default" href = "instruments/">Go &raquo;</a></p>
+    </div>
+    <div class = "col-md-4">
+        <h2><b>Allocate and Combine</b></h2>
+        <p>Dig deeper by learning how to use the instruments to create brilliant sound effect!</p>
+        <p><a class = "btn btn-default" href = "orchestrate/">Go &raquo;</a></p>
+    </div>
+    <div class = "col-md-4">
+        <h2><b>Appreciate Beautiful Work</b></h2>
+        <p>Read our analysis of the most classical works in history!</p>
+        <p><a class = "btn btn-default" href = "appreciate/">Go &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
