@@ -19,6 +19,23 @@
     String instruments have the most plasticity among all instruments in the orchestra, making them almost possible to present every kind of emotion or trick you want them to.
 </p>
 
+<p><b>Search for instruments: </b></p>
+
+<form method = "get" novalidate>
+    {% csrf_token %}
+    {{ form }}
+    &nbsp;&nbsp;&nbsp;
+    <button type = "submit" class = "btn btn-primary">Submit</button>
+</form>
+
+{% if messages %}
+<ul>
+   {% for message in messages %}
+	   <li>{{ message }}</li>
+   {% endfor %}
+</ul>
+{% endif %}
+
 <div class = "row">
     <div class = "col-md-3">
         <h2>Woodwind</h2>
