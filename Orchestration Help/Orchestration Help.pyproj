@@ -57,7 +57,13 @@
     <Folder Include="Orchestration_Help\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\templates\app\appreciate.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="app\templates\app\instruments.html" />
+    <Content Include="app\templates\app\orchestrate.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="app\templates\instruments\bassoon.html" />
     <Content Include="app\templates\instruments\bass_drum.html" />
     <Content Include="app\templates\instruments\clarinet.html" />

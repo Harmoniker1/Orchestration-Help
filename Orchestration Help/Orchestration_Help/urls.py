@@ -14,5 +14,7 @@ urlpatterns = [
     path("about/", views.about, name = "about"),
     path("instruments/", views.instruments, name = "instruments"),
     path("instruments/<str:instrument>/", views.specific_instrument, name = "specific_instrument"),
+    path("orchestrate/", views.orchestrate, name = "orchestrate"),
+    path("appreciate/", views.appreciate, name = "appreciate"),
     path("admin/", admin.site.urls),
 ]

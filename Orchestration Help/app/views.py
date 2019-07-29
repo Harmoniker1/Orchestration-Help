@@ -58,7 +58,7 @@ def instruments(request):
             a = instrument["search_instrument"].lower()
             if a == "":
                 None
-            elif a == "flute" or a == "oboe" or a == "clarinet" or a == "bassoon" or a == "saxophone" or a == "horn" or a == "trumpet" or a == "trombone" or a == "tuba" or a == "timpani" or a == "cymbal" or a == "violin" or a == "viola" or a == "violoncello" or a == "contrabass":
+            elif a == "flute" or a == "oboe" or a == "clarinet" or a == "bassoon" or a == "saxophone" or a == "horn" or a == "trumpet" or a == "trombone" or a == "tuba" or a == "timpani" or a == "cymbal" or a == "harp" or a == "violin" or a == "viola" or a == "violoncello" or a == "contrabass":
                 return HttpResponseRedirect(a + "/")
             elif a == "sax" or a == "soprano sax" or a == "soprano saxophone" or a == "alto sax" or a == "alto saxophone" or a == "tenor sax" or a == "tenor saxophone" or a == "baritone sax" or a == "baritone saxophone":
                 return HttpResponseRedirect("saxophone/")
@@ -96,6 +96,30 @@ def specific_instrument(request, instrument):
         request,
         "instruments/" + instrument + ".html",
         {
+            "year": datetime.now().year,
+        }
+    )
+
+def orchestrate(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        "app/orchestrate.html",
+        {
+            "title": "Orchestrate",
+            "message": "Experiences of orchestration.",
+            "year": datetime.now().year,
+        }
+    )
+
+def appreciate(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        "app/appreciate.html",
+        {
+            "title": "Appreciating Masterpieces",
+            "message": "Enjoy learning from the masterworks!",
             "year": datetime.now().year,
         }
     )
