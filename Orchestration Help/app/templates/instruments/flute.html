@@ -1,7 +1,27 @@
-﻿{% extends "app/layout.html" %}
+﻿<link rel = "import" href = "instruments_table.html">
+
+{% extends "app/layout.html" %}
 
 {% block content %}
 
 <h2>Flute</h2>
+
+<table style = "width: 50%; margin-top: 0.4cm">
+  <tr>
+    <th colspan = "2">Pitch Range</th>
+    <th rowspan = "2">Transposing</th> 
+    <th rowspan = "2">Clef</th>
+  </tr>
+  <tr>
+    <th>Amateur</th>
+    <th>Professional</th>
+  </tr>
+  <tr>
+    <td>C4 - A6</td>
+    <td>B3 - D7</td>
+    <td>None</td>
+    <td>Treble Clef</td>
+  </tr>
+</table>
 
 {% endblock %}

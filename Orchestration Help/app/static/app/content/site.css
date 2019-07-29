@@ -75,3 +75,10 @@ li {
     font-family: "High Tower Text";
     font-size: 18px;
 }
+
+table, th, td {
+    font-family: "High Tower Text";
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}

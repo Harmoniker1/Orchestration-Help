@@ -58,21 +58,21 @@ def instruments(request):
             a = instrument["search_instrument"].lower()
             if a == "":
                 None
-            elif a == "flute" or a == "oboe" or a == "clarinet" or a == "bassoon" or a == "horn" or a == "trumpet" or a == "trombone" or a == "tuba" or a == "timpani" or a == "cymbal" or a == "violin" or a == "viola" or a == "violoncello" or a == "contrabass":
+            elif a == "flute" or a == "oboe" or a == "clarinet" or a == "bassoon" or a == "saxophone" or a == "horn" or a == "trumpet" or a == "trombone" or a == "tuba" or a == "timpani" or a == "cymbal" or a == "violin" or a == "viola" or a == "violoncello" or a == "contrabass":
                 return HttpResponseRedirect(a + "/")
+            elif a == "sax" or a == "soprano sax" or a == "soprano saxophone" or a == "alto sax" or a == "alto saxophone" or a == "tenor sax" or a == "tenor saxophone" or a == "baritone sax" or a == "baritone saxophone":
+                return HttpResponseRedirect("saxophone/")
             elif a == "french horn":
                 return HttpResponseRedirect("horn/")
+            elif a == "alto trombone" or a == "tenor trombone" or a == "bass trombone":
+                return HttpResponseRedirect("trombone/")
             elif a == "bass drum":
                 return HttpResponseRedirect("bass_drum/")
-            elif a == "snare drum":
-                return HttpResponseRedirect("snare_drum/")
-            elif a == "snare":
+            elif a == "snare" or a == "snare drum":
                 return HttpResponseRedirect("snare_drum/")
             elif a == "cello":
                 return HttpResponseRedirect("violoncello/")
-            elif a == "bass":
-                return HttpResponseRedirect("contrabass/")
-            elif a == "double bass":
+            elif a == "bass" or a == "double bass":
                 return HttpResponseRedirect("contrabass/")
             else:
                 messages.add_message(request, messages.INFO, "Sorry, your input is invalid, or the instrument hasn't been added yet.")
