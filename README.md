@@ -6,7 +6,7 @@ This is a website built using python-django framework, and based on the default 
 
 ## How to run
 
-This website hasn't been published yet. If you have Visual Studio 2019 installed, simply clone this repository, open the solution file, choose Orchestration_Help/manage.py as startup item and run. If you haven't, then follow the corresponding basic rules of running a django website on your system.
+This website hasn't been published yet. If you have Visual Studio 2019 installed, simply clone this repository, open the solution file, choose Orchestration Help/manage.py as startup item and run. If you haven't, then follow the corresponding basic rules of running a django website on your system.
 
 ## Developer
 
