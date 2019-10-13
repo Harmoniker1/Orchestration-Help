@@ -1,5 +1,7 @@
 # Orchestration Help
 
+[![Travis CI](https://secure.travis-ci.org/Howard-C/Orchestration-Help.svg?branch=master)](https://travis-ci.org/Howard-C/Orchestration-Help)
+
 ## Introduction
 
 This is a website built using python-django framework, and based on the default template "Twitter Bootstrap" offered by Visual Studio. The overall idea of this website is to provide information on orchestration, but more interaction like forums and issue requests may be added.
